@@ -1,8 +1,20 @@
-@import "./variables";
+@import "./utils/normalize.scss";
+@import "./utils/variables";
+@import "./components/about";
 /*
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
 
 // Style dla pliku z przykładem HTML fragmentu
-@import './example';
+// @import './example';
+
+body{
+    font-family: DM sans;
+}
+
+@media screen and (max-width: 767px) {
+    .container{
+        max-width: 480px;
+    }
+}
