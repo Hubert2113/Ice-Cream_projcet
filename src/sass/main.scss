@@ -1,4 +1,4 @@
-@import "./variables";
+@import './variables';
 /*
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
@@ -6,3 +6,6 @@
 
 // Style dla pliku z przykładem HTML fragmentu
 @import './example';
+
+// customer_reviews
+@import './customer_reviews';
