@@ -55,4 +55,5 @@ function changeClass(id_element) {
             document.querySelector('.buttons_reviews__svg1').classList.add('is-hidden');
     }
     }
-//====================================================================================
+//====================== koniec import oraz funkcje dla slider opini ====================================
+

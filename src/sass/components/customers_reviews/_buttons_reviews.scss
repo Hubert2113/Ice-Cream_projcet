@@ -1,18 +1,8 @@
-.customer_reviews {
-  width: 1200px;
-  min-height: 200px;
-  text-align: center;
-  background-color: #fff;
-  padding-bottom: 50px;
-  &__images {
-    height: 400px;
-    width: auto;
-  }
-}
 .buttons_reviews {
   display: flex;
   justify-content: center;
   padding: 50px;
+  max-width: 926px;
 }
 .btn {
   &0 {
@@ -39,11 +29,4 @@
   &--selected{
       background-color: #fff;
   }
-}
-
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transform: scale(0);
 }
