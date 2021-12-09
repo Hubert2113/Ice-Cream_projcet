@@ -1,11 +1,24 @@
 .customer_reviews {
-  width: 1200px;
+  max-width: 1200px;
   min-height: 200px;
-  text-align: center;
   background-color: #fff;
   padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   &__images {
     height: 400px;
     width: auto;
+  }
+  &__slides {
+    max-width: 926px;
+    text-align: center;
+    &--paragraf {
+      display: flex;
+      align-items: center;
+      background-color: #fafafa;
+      min-height: 138px;
+      padding: 47px 87px 40px;
+    }
   }
 }
