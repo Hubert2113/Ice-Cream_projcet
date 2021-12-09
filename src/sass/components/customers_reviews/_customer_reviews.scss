@@ -1,0 +1,11 @@
+.customer_reviews {
+  width: 1200px;
+  min-height: 200px;
+  text-align: center;
+  background-color: #fff;
+  padding-bottom: 50px;
+  &__images {
+    height: 400px;
+    width: auto;
+  }
+}
