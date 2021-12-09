@@ -15,6 +15,10 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .navigation__statistics {
+    display: none;
+    overflow: hidden;
+  }
   .container {
     max-width: 100vw;
     padding-top: 6px;
@@ -209,6 +213,37 @@
     text-transform: uppercase;
     color: #fff;
     max-width: 21%;
+    margin: 0;
+  }
+  .navigation__statistic-data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .navigation__statistic-data--margin-top {
+    margin-top: 14px;
+  }
+  .navigation__statistic-number {
+    font-family: Titan One;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+    margin: 0;
+  }
+  .navigation__statistic-text {
+    font-family: DM Sans;
+    font-size: 8px;
+    line-height: 1.25;
+    color: #ffffff;
     margin: 0;
   }
   .navigation__banner-second {
