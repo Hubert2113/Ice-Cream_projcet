@@ -23,9 +23,13 @@
       padding: 47px 60px 40px;
       margin: 0 6% 0;
       &::before {
-        width: 54px;
-        height: 40px;
-        background-image: url('../images/customer_reviews/apostrof.png');
+        font-family: $font-header;
+        content: ',,';
+        font-size: 80px;
+        color: #e1e1e1;
+        position: absolute;
+        left: 4%;
+        bottom: -110px;
       }
     }
     &--dots {
