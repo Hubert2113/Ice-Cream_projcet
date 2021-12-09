@@ -15,7 +15,8 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .navigation__statistics {
+  .navigation__statistics,
+  .navigation__bottom-bar {
     display: none;
     overflow: hidden;
   }
@@ -222,6 +223,7 @@
     margin: 0;
   }
   .navigation__statistic-data {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -236,6 +238,19 @@
   .navigation__statistic-data--margin-top {
     margin-top: 14px;
   }
+  .navigation__statistic-circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 16px;
+    height: 16px;
+    left: 33px;
+    top: -4px;
+    z-index: 1;
+  }
+  .navigation__statistic-circle--position {
+    top: -4px;
+  }
   .navigation__statistic-number {
     font-family: Titan One;
     font-size: 28px;
@@ -244,6 +259,8 @@
     text-transform: uppercase;
     color: #d41443;
     margin: 0;
+    position: relative;
+    z-index: 2;
   }
   .navigation__statistic-text {
     font-family: DM Sans;
@@ -290,6 +307,19 @@
   }
   .navigation__button-link--color {
     color: #ffffff;
+  }
+  .navigation__bottom-bar {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 59px;
+  }
+  .navigation__bottom-text {
+    font-family: DM Sans;
+    font-size: 8px;
+    line-height: 1.5;
+    color: #ffffff;
+    max-width: 114px;
+    margin-left: 120px;
   }
 }
 
