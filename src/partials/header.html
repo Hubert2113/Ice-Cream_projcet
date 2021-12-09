@@ -1,0 +1,59 @@
+<header class="header">
+  <nav class="navigation">
+    <div class="container navigation__container">
+      <div class="navigation__circle"></div>
+      <picture class="navigation__bg-image">
+        <source
+          srcset="/images/ice-cream-header-mobile.png, /images/ice-cream-header-mobile@2x.png 2x"
+          media="(min-width: 320px)"
+        />
+        <source srcset="\images\ice-cream-header-tablet.png" media="(min-width: 768px)" />
+        <source srcset="\images\ice-cream-header-desktop.png" media="(min-width: 1280px)" />
+        <img
+          src="\images\ice-cream-header-desktop.png"
+          srcset="\images\ice-cream-header-desktop@2x.png 2x"
+          alt="background image ice creams"
+        />
+      </picture>
+      <div class="navigation__top-bar">
+        <a href="index.html" class="logo">
+          <img
+            class="logo__image"
+            src="\images\logo-header.png"
+            srcset="\images\logo-header@2x.png 2x"
+            alt="logo strony"
+          />
+        </a>
+        <button class="burger"></button>
+      </div>
+      <div class="navigation__middle-bar1">
+        <h1 class="navigation__banner">
+          ice cream made with <span class="navigation__banner-second">passion</span>
+        </h1>
+        <div class="navigation__numbers">
+          <div class="navigation__number1">
+            <h2>16</h2>
+            <p>cafes</p>
+          </div>
+          <div class="navigation__number2">
+            <h2>23</h2>
+            <p>food trucks</p>
+          </div>
+        </div>
+      </div>
+      <div class="navigation__middle-bar2">
+        <button class="navigation__button navigation__button--bg-color">
+          <a
+            href="#products"
+            class="navigation__button-link navigation__button-link--color no-decoration"
+            >Products</a
+          >
+        </button>
+        <button class="navigation__button">
+          <a href="#about" class="navigation__button-link no-decoration">How it's made?</a>
+        </button>
+      </div>
+      <div>A</div>
+    </div>
+  </nav>
+</header>
