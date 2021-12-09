@@ -1,22 +1,24 @@
-@import "./normalize.scss";
-@import "./variables";
-@import "./components/about";
+@import './normalize.scss';
+@import './variables';
+@import './components/about';
 /*
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
 // customer_reviews
-@import './components/customer_reviews';
+@import './components/customers_reviews/customer_reviews';
+@import './components/customers_reviews/buttons_reviews';
+@import './components/is-hidden';
 
 // Style dla pliku z przykładem HTML fragmentu
 // @import './example';
 
-body{
-    font-family: DM sans;
+body {
+  font-family: DM sans;
 }
 
 @media screen and (max-width: 767px) {
-    .container{
-        max-width: 480px;
-    }
+  .container {
+    max-width: 480px;
+  }
 }
