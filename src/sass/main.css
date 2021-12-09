@@ -117,9 +117,15 @@
     padding: 8px 16px;
     border-radius: 20px;
   }
+  .navigation__button:hover {
+    background-color: #ecebeb;
+  }
   .navigation__button--bg-color {
     background-color: #d41443;
     margin-right: 8px;
+  }
+  .navigation__button--bg-color:hover {
+    background-color: #c7133e;
   }
   .navigation__button-link {
     font-family: DM Sans;
@@ -264,9 +270,15 @@
     padding: 8px 16px;
     border-radius: 20px;
   }
+  .navigation__button:hover {
+    background-color: #ecebeb;
+  }
   .navigation__button--bg-color {
     background-color: #d41443;
     margin-right: 8px;
+  }
+  .navigation__button--bg-color:hover {
+    background-color: #c7133e;
   }
   .navigation__button-link {
     font-family: DM Sans;

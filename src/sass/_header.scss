@@ -99,9 +99,15 @@
       background-color: #ffffff;
       padding: 8px 16px;
       border-radius: 20px;
+      &:hover {
+        background-color: #ecebeb;
+      }
       &--bg-color {
         background-color: #d41443;
         margin-right: 8px;
+        &:hover {
+          background-color: #c7133e;
+        }
       }
     }
     &__button-link {
@@ -186,13 +192,13 @@
       max-width: 21%;
       margin: 0;
     }
-    &__statistic-data{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        &--margin-top{
-            margin-top: 14px;
-        }
+    &__statistic-data {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      &--margin-top {
+        margin-top: 14px;
+      }
     }
     &__statistic-number {
       font-family: Titan One;
@@ -223,9 +229,15 @@
       background-color: #ffffff;
       padding: 8px 16px;
       border-radius: 20px;
+      &:hover {
+        background-color: #ecebeb;
+      }
       &--bg-color {
         background-color: #d41443;
         margin-right: 8px;
+        &:hover {
+          background-color: #c7133e;
+        }
       }
     }
     &__button-link {
