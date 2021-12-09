@@ -11,16 +11,42 @@
     max-width: 926px;
     text-align: center;
     &--paragraf {
-      align-items: center;
+      font-family: DM Sans;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 255%;
+      color: #000000;
+
       background-color: #fafafa;
       min-height: 138px;
-      padding: 47px 87px 40px;
+      padding: 47px 60px 40px;
+      margin: 0 6% 0;
+      &::before {
+        width: 54px;
+        height: 40px;
+        background-image: url('../images/customer_reviews/apostrof.png');
+      }
+    }
+    &--dots {
+      color: #c7133e;
+      font-size: 40px;
+      margin: 0;
+      letter-spacing: 10px;
+    }
+    &--title {
+      font-family: DM Sans;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 186%;
+      color: #000000;
     }
   }
   @media screen and (max-width: 767px) {
     &__mosaic {
       position: absolute;
-      top: -40%;
+      top: -35%;
       width: 100%;
       display: flex;
       justify-content: center;
