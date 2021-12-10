@@ -4,8 +4,11 @@
     justify-content: center;
     max-width: 767px;
     padding-top: 125px;
-    padding-bottom: 145px;
     background-color: $color-background-main-first;
+    background-image: url('../images/about/about-bg.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position-y: 736px;
     &--title {
       font-family: titan one;
       font-size: 34px;
@@ -49,10 +52,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      background-image: url('../images/about-bg.png');
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position-y: 633px;
     }
     &-btn {
       width: 176px;
@@ -67,6 +66,10 @@
       font-style: normal;
       text-align: center;
       margin-right: 50px;
+      transition: background-color 250ms linear;
+      &:hover{
+        background-color: $color-btn-hover;
+      }
       &--icon {
         width: 8px;
         height: 8px;
@@ -79,6 +82,6 @@
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .header-studio {
-    background-image: url(../images/about-bg@2x.png);
+    background-image: url(../images/about/about-bg@2x.png);
   }
 }

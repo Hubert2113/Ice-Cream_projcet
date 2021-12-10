@@ -1,0 +1,39 @@
+@media screen and (max-width: 767px) {
+  .adventages {
+    display: flex;
+    justify-content: center;
+    max-width: 767px;
+    padding-bottom: 145px;
+    background-color: $color-background-main-first;
+    &-item {
+      max-width: 480px;
+      display: flex;
+      margin-top: 38px;
+      justify-content: flex-start;
+      &--number {
+        font-family: $font-header;
+        color: $color-highlight;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 36px;
+        line-height: 1.138;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        margin-top: 16px;
+        margin-bottom: 10px;
+      }
+      &--description {
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 1.7;
+        color: $text-primary;
+        width: 70%;
+      }
+    }
+    &--box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
