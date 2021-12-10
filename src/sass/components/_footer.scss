@@ -1,0 +1,29 @@
+.footer {
+    background-color: $color-background-main;
+
+    &__title {
+        padding: 113px 66px 0 22px;
+        color: #ffa5ba;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: uppercase;
+        font-family: $font-header;
+        font-weight: normal;
+        font-style: normal;
+        margin: 0;
+    }
+
+    &__title2 {
+        margin-top: 17px;
+        padding: 0 100px 0 22px;
+        font-family: $font-header;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 34px;
+        line-height: 39px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #D41443;
+        width: 200px;
+    }
+}
