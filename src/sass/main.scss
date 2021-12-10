@@ -1,10 +1,12 @@
-@import "./normalize.scss";
-@import "./variables";
-@import "./components/about";
+@import './normalize.scss';
+@import './variables';
+@import './components/about';
 /*
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
+//Gallery
+@import './components/galerry/galerry';
 // customer_reviews
 @import './components/customer_reviews';
 @import './components/contacts';
@@ -15,12 +17,12 @@
 // Style dla pliku z przykładem HTML fragmentu
 // @import './example';
 
-body{
-    font-family: DM sans;
+body {
+  font-family: DM sans;
 }
 
 @media screen and (max-width: 767px) {
-    .container{
-        max-width: 480px;
-    }
+  .container {
+    max-width: 480px;
+  }
 }
