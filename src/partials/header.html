@@ -7,8 +7,17 @@
           srcset="/images/ice-cream-header-mobile.png 1x, /images/ice-cream-header-mobile@2x.png 2x"
           media="(min-width: 320px)"
         />
-        <source srcset="\images\ice-cream-header-tablet.png 1x, /images/ice-cream-header-tablet@2x.png 2x" media="(min-width: 768px)" />
-        <source srcset="\images\ice-cream-header-desktop.png 1x, /images/ice-cream-header-desktop@2x.png 2x" media="(min-width: 1280px)" />
+        <source
+          srcset="\images\ice-cream-header-tablet.png 1x, /images/ice-cream-header-tablet@2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            \images\ice-cream-header-desktop.png    1x,
+            /images/ice-cream-header-desktop@2x.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
         <img
           src="\images\ice-cream-header-desktop.png"
           srcset="\images\ice-cream-header-desktop@2x.png 2x"
@@ -24,9 +33,14 @@
             alt="logo strony"
           />
         </a>
-        <button class="burger"></button>
-        <button class="navigation__button-buy">
+        <svg class="modal-menu-open" data-mobile-menu-open>
+          <use href="\images\sprite.svg#icon-burger"></use>
+        </svg>
+        <button class="navigation__button-buy navigation__button-buy--margin-left">
           Buy now
+          <svg class="navigation__button-buy-icon">
+            <use href="/images/sprite.svg#icon-btn-arrow"></use>
+          </svg>
         </button>
       </div>
       <div class="navigation__middle-bar1">
@@ -41,7 +55,7 @@
           </div>
           <div class="navigation__statistic-data navigation__statistic-data--margin-top">
             <h2 class="navigation__statistic-number">23</h2>
-            <p class="navigation__statistic-text">food trucks</p> 
+            <p class="navigation__statistic-text">food trucks</p>
             <div class="navigation__statistic-circle navigation__statistic-circle--position"></div>
           </div>
         </div>
@@ -60,10 +74,14 @@
       </div>
       <div class="navigation__bottom-bar">
         <p class="navigation__bottom-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
         </p>
+        <div class="navigation__bottom-circle"></div>
+        <svg class="navigation__bottom-arrow">
+          <use href="\images\sprite.svg#icon-arrow-right"></use>
+        </svg>
       </div>
-      <div>A</div>
     </div>
   </nav>
 </header>
