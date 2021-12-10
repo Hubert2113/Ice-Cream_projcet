@@ -21,11 +21,9 @@
     overflow: hidden;
   }
 
-  .container {
+  .navigation__container {
     max-width: 100vw;
     padding-top: 6px;
-    padding-left: 20px;
-    padding-right: 20px;
     padding-bottom: 160px;
   }
 
@@ -44,14 +42,11 @@
 
   .navigation {
     &__circle {
-      border-radius: 50%;
-      width: 346px;
+      width: 100%;
       height: 344px;
-      left: 36px;
       top: 83px;
-      background: #ffa5ba;
       position: absolute;
-      z-index: 1;
+      overflow: hidden;
     }
     &__bg-image {
       position: absolute;
