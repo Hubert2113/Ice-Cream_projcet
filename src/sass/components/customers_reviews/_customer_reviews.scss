@@ -15,13 +15,15 @@
       font-style: normal;
       font-weight: 500;
       font-size: 12px;
-      line-height: 255%;
+      // line-height: 255%;
+      line-height: 31px;
       color: #000000;
 
       background-color: #fafafa;
       min-height: 138px;
       padding: 47px 60px 40px;
       margin: 0 6% 0;
+      border-radius: 5%;
       &::before {
         font-family: $font-header;
         content: ',,';
@@ -31,6 +33,13 @@
         left: 4%;
         bottom: -110px;
       }
+    }
+    &--lineCard {
+      background-image: repeating-linear-gradient(
+        #E1E1E1 1px,
+        transparent 3px,
+        transparent 35px
+      );
     }
     &--dots {
       color: #c7133e;
