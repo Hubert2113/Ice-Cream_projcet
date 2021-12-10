@@ -1,14 +1,20 @@
-@import './normalize.scss';
-@import './variables';
-@import './components/about';
+@import "./variables";
+@import './modal';
+@import "./header";
 /*
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
+//Gallery
+@import './components/galerry/galerry';
 // customer_reviews
 @import './components/customers_reviews/customer_reviews';
 @import './components/customers_reviews/buttons_reviews';
-@import './components/is-hidden';
+@import './components/contacts';
+@import './components/footer';
+@import './components/footer-social';
+@import './components/footer-copyright';
+@import './components/about';
 
 // Style dla pliku z przykładem HTML fragmentu
 // @import './example';
