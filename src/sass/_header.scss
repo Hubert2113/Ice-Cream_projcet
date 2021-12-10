@@ -347,6 +347,15 @@
       top: 55px;
       z-index: 1;
     }
+    &__bottom-arrow{
+      width: 8px;
+      height: 8px;
+      fill: #D41443;
+      position: absolute;
+      z-index: 2;
+      left: 125px;
+      top: 60px;
+    }
   }
 }
 
