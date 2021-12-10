@@ -8,9 +8,11 @@
 //Gallery
 @import './components/galerry/galerry';
 // customer_reviews
-@import './components/customers_reviews/customer_reviews';
-@import './components/customers_reviews/buttons_reviews';
-@import './components/is-hidden';
+@import './components/customer_reviews';
+@import './components/contacts';
+@import './components/footer';
+@import './components/footer-social';
+@import './components/footer-copyright';
 
 // Style dla pliku z przykładem HTML fragmentu
 // @import './example';
