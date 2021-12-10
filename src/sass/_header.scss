@@ -15,7 +15,8 @@
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .navigation__statistics,
-  .navigation__bottom-bar {
+  .navigation__bottom-bar,
+  .navigation__button-buy {
     display: none;
     overflow: hidden;
   }
@@ -25,8 +26,16 @@
     padding-top: 6px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 160px;
   }
 
+  .modal-menu-open {
+    width: 20px;
+    height: 12px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
   .logo {
     &__image {
       max-width: 100%;
@@ -44,7 +53,9 @@
       position: absolute;
       z-index: 1;
     }
-
+    &__container{
+      
+    }
     &__bg-image {
       position: absolute;
       z-index: 2;
@@ -73,7 +84,6 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: flex-start;
-      margin-bottom: 160px;
       position: relative;
       z-index: 3;
     }
@@ -100,6 +110,9 @@
       background-color: #ffffff;
       padding: 8px 16px;
       border-radius: 20px;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+              background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+              cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
       &:hover {
         background-color: #ecebeb;
       }
@@ -132,7 +145,13 @@
     padding-left: 34px;
     padding-right: 34px;
   }
-
+  .modal-menu-open {
+    width: 20px;
+    height: 12px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
   .logo {
     &__image {
       max-width: 100%;
