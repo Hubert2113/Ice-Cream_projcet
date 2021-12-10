@@ -5,6 +5,8 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
+//Gallery
+@import './components/galerry/galerry';
 // customer_reviews
 @import './components/customers_reviews/customer_reviews';
 @import './components/customers_reviews/buttons_reviews';
