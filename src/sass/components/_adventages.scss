@@ -37,3 +37,65 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .adventages {
+    display: flex;
+    justify-content: center;
+    max-width: 1199px;
+    padding-bottom: 140px;
+    padding-top: 66px;
+    background-color: $color-background-main-first;
+    &__box {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-left: 36px;
+      margin-right: 76px;
+    }
+    &-item {
+      width: 180px;
+      margin-right: 60px;
+      &:nth-of-type(1)::before {
+        content: '';
+        display: block;
+        width: 33px;
+        height: 50px;
+        background-image: url('../images/adventages/cocktail.png');
+      }
+      &:nth-of-type(2)::before {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-image: url('../images/adventages/apples.png');
+      }
+      &:nth-of-type(3)::before {
+        content: '';
+        display: block;
+        width: 44px;
+        height: 50px;
+        background-image: url('../images/adventages/lollypop.png');
+      }
+      &__number {
+        font-family: $font-header;
+        color: $color-highlight;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 48px;
+        line-height: 1.138;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        margin-top: 16px;
+        margin-bottom: 10px;
+      }
+      &__description {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.7;
+        color: $text-primary;
+        width: 100%;
+      }
+    }
+  }
+}
