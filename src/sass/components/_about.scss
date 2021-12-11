@@ -4,9 +4,12 @@
     justify-content: center;
     max-width: 767px;
     padding-top: 125px;
-    padding-bottom: 145px;
     background-color: $color-background-main-first;
-    &--title {
+    background-image: url('../images/about/about-bg.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position-y: 736px;
+    &__title {
       font-family: titan one;
       font-size: 34px;
       line-height: 1.147;
@@ -17,7 +20,7 @@
       color: $color-highlight;
       text-align: center;
     }
-    &--undertitle {
+    &__undertitle {
       font-family: titan one;
       font-style: normal;
       font-weight: normal;
@@ -27,32 +30,28 @@
       text-transform: uppercase;
       color: $color-accent;
     }
-    &--description {
+    &__description {
       color: $text-primary;
       font-weight: 500;
       font-size: 12px;
       line-height: 1.62;
       width: 220px;
     }
-    &--subdescription {
+    &__subdescription {
       color: $text-secondary;
       font-weight: 500;
       font-size: 12px;
       line-height: 1.62;
       width: 220px;
     }
-    &--img {
+    &__img {
       max-width: 280px;
       height: auto;
     }
-    &--box {
+    &__box {
       display: flex;
       flex-direction: column;
       align-items: center;
-      background-image: url('../images/about-bg.png');
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position-y: 633px;
     }
     &-btn {
       width: 176px;
@@ -67,7 +66,11 @@
       font-style: normal;
       text-align: center;
       margin-right: 50px;
-      &--icon {
+      transition: background-color 250ms linear;
+      &:hover{
+        background-color: $color-btn-hover;
+      }
+      &__icon {
         width: 8px;
         height: 8px;
         margin-left: 14px;
@@ -78,7 +81,7 @@
 
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  .header-studio {
-    background-image: url(../images/about-bg@2x.png);
+  .about {
+    background-image: url(../images/about/about-bg@2x.png);
   }
 }
