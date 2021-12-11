@@ -134,7 +134,7 @@
 }
 // TABLET//
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     .section {
       &-products {
         padding: 0px;
@@ -142,7 +142,7 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     .products {
 
             padding-top: 122px;
@@ -208,7 +208,7 @@
     }
 }
 // DESKTOP //
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
     .section {
       &-products {
         padding: 122px 0px 112px 0px;
@@ -216,7 +216,7 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
     .products {
         padding-top: 127px;
  
