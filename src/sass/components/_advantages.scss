@@ -1,5 +1,5 @@
 @media screen and (max-width: 767px) {
-  .adventages {
+  .advantages {
     display: flex;
     justify-content: center;
     max-width: 767px;
@@ -39,7 +39,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .adventages {
+  .advantages {
     display: flex;
     justify-content: center;
     max-width: 1199px;
@@ -61,21 +61,21 @@
         display: block;
         width: 33px;
         height: 50px;
-        background-image: url('../images/adventages/cocktail.png');
+        background-image: url('../images/advantages/cocktail.png');
       }
       &:nth-of-type(2)::before {
         content: '';
         display: block;
         width: 50px;
         height: 50px;
-        background-image: url('../images/adventages/apples.png');
+        background-image: url('../images/advantages/apples.png');
       }
       &:nth-of-type(3)::before {
         content: '';
         display: block;
         width: 44px;
         height: 50px;
-        background-image: url('../images/adventages/lollypop.png');
+        background-image: url('../images/advantages/lollypop.png');
       }
       &__number {
         font-family: $font-header;
@@ -91,6 +91,66 @@
       }
       &__description {
         font-size: 14px;
+        font-weight: bold;
+        line-height: 1.7;
+        color: $text-primary;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    display: flex;
+    justify-content: center;
+    min-width: 1200px;
+    padding-bottom: 140px;
+    background-color: $color-background-main-first;
+    &__box {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 0 auto;
+    }
+    &-item {
+      width: 330px;
+      margin-right: 30px;
+      &:nth-of-type(1)::before {
+        content: '';
+        display: block;
+        width: 33px;
+        height: 50px;
+        background-image: url('../images/advantages/cocktail.png');
+      }
+      &:nth-of-type(2)::before {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-image: url('../images/advantages/apples.png');
+      }
+      &:nth-of-type(3)::before {
+        content: '';
+        display: block;
+        width: 44px;
+        height: 50px;
+        background-image: url('../images/advantages/lollypop.png');
+      }
+      &__number {
+        font-family: $font-header;
+        color: $color-highlight;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 58px;
+        line-height: 1.138;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        margin-top: 40px;
+        margin-bottom: 15px;
+      }
+      &__description {
+        font-size: 16px;
         font-weight: bold;
         line-height: 1.7;
         color: $text-primary;
