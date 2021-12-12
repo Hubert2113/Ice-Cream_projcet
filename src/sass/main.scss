@@ -18,11 +18,11 @@
 @import './components/footer-copyright';
 @import './components/about';
 @import './components/is-hidden';
-@import './components/adventages';
+@import './components/advantages';
 
 // Style dla pliku z przykładem HTML fragmentu
 body {
-  font-family: DM sans;
+  font-family: $font-primary;
 }
 
 .container {
