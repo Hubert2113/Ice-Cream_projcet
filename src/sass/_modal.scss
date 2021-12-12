@@ -1,5 +1,6 @@
 .navigation__button-buy--modal-size {
   width: 195px;
+  margin: 23px 27px 0 0;
 }
 .backdrop {
   z-index: 4;
@@ -28,14 +29,13 @@
   background-color: $color-background-modal;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   position: relative;
   &__icon {
     width: 14px;
     height: 14px;
-    position: absolute;
-    top: 23px;
-    left: 85%;
+    margin-top: 23px;
+    margin-right: 28px;
   }
 }
 .is-hidden {

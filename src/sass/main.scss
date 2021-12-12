@@ -1,6 +1,8 @@
-@import "./variables";
+@import './variables';
+@import './normalize';
+@import './products';
 @import './modal';
-@import "./header";
+@import './header';
 /*
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
@@ -15,16 +17,14 @@
 @import './components/footer-social';
 @import './components/footer-copyright';
 @import './components/about';
+@import './components/is-hidden';
+@import './components/adventages';
 
 // Style dla pliku z przykładem HTML fragmentu
-// @import './example';
-
 body {
   font-family: DM sans;
 }
 
-@media screen and (max-width: 767px) {
-  .container {
-    width: 100%;
-  }
+.container {
+  width: 100%;
 }
