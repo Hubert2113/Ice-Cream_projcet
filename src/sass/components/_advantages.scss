@@ -7,9 +7,28 @@
     background-color: $color-background-main-first;
     &-item {
       max-width: 480px;
-      display: flex;
       margin-top: 38px;
-      justify-content: flex-start;
+      &:nth-of-type(1)::before {
+        content: '';
+        display: block;
+        width: 33px;
+        height: 50px;
+        background-image: url('../images/advantages/cocktail.png');
+      }
+      &:nth-of-type(2)::before {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-image: url('../images/advantages/apples.png');
+      }
+      &:nth-of-type(3)::before {
+        content: '';
+        display: block;
+        width: 44px;
+        height: 50px;
+        background-image: url('../images/advantages/lollypop.png');
+      }
       &__number {
         font-family: $font-header;
         color: $color-highlight;
