@@ -4,17 +4,17 @@
       <div class="navigation__circle"></div>
       <picture class="navigation__bg-image">
         <source
-          srcset="/images/ice-cream-header-mobile.png 1x, /images/ice-cream-header-mobile@2x.png 2x"
+          srcset="\images\ice-cream-header-mobile.png 1x, \images\ice-cream-header-mobile@2x.png 2x"
           media="(min-width: 320px)"
         />
         <source
-          srcset="\images\ice-cream-header-tablet.png 1x, /images/ice-cream-header-tablet@2x.png 2x"
+          srcset="\images\ice-cream-header-tablet.png 1x, \images\ice-cream-header-tablet@2x.png 2x"
           media="(min-width: 768px)"
         />
         <source
           srcset="
-            \images\ice-cream-header-desktop.png    1x,
-            /images/ice-cream-header-desktop@2x.png 2x
+            \images\ice-cream-header-desktop.png 1x,
+            \images\ice-cream-header-desktop@2x.png 2x
           "
           media="(min-width: 1280px)"
         />
@@ -33,6 +33,13 @@
             alt="logo strony"
           />
         </a>
+        <ul class="navigation__list">
+          <li class="navigation__list-items"><a class="navigation__list-link" href="#hero-header">Home</a></li>
+          <li class="navigation__list-items"><a class="navigation__list-link" href="#about">About us</a></li>
+          <li class="navigation__list-items"><a class="navigation__list-link" href="#how-its-made">How it's made?</a></li>
+          <li class="navigation__list-items"><a class="navigation__list-link" href="#products">Our products</a></li>
+          <li class="navigation__list-items navigation__list-items--no-marginr"><a class="navigation__list-link" href="#contact">Contact</a></li>
+        </ul>
         <svg class="modal-menu-open" data-mobile-menu-open>
           <use href="\images\sprite.svg#icon-burger"></use>
         </svg>
