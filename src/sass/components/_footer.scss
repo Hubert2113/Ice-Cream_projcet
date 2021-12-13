@@ -27,3 +27,60 @@
         width: 200px;
     }
 }
+
+@media screen and (min-width: 768px) and (max-width:1199px){
+    .footer {
+        &__title {
+            padding: 0;
+            margin-top: 165px;
+            padding-left: 36px;
+            max-width: 340px;
+            font-family: Titan One;
+            font-size: 26px;
+            line-height: 30px;
+            letter-spacing: 0.04em;
+        }
+
+        &__title2 {
+            margin: 0;
+            padding: 0;
+            padding-left: 36px;
+            margin-top: 16px;
+            font-size: 48px;
+            line-height: 55px;
+            letter-spacing: 0.06em;
+        }
+
+        &__container {
+            display: flex;
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .footer {
+        &__title {
+            padding: 0;
+            margin-top: 165px;
+            padding-left: 114px;
+            font-size: 30px;
+            line-height: 34px;
+            letter-spacing: 0.04em;
+        }
+
+        &__title2 {
+            margin: 0;
+            padding: 0;
+            padding-left: 114px;
+            margin-top: 15px;
+            min-width: 600px;
+            font-size: 58px;
+            line-height: 66px;
+            letter-spacing: 0.06em;
+        }
+
+        &__container {
+            display: flex;
+        }
+    }
+}
