@@ -4,23 +4,29 @@
       <div class="navigation__circle"></div>
       <picture class="navigation__bg-image">
         <source
-          srcset="/images/ice-cream-header-mobile.png 1x, /images/ice-cream-header-mobile@2x.png 2x"
-          media="(min-width: 320px)"
+          srcset="
+            \images\hero_header\ice-cream-header-desktop.png    1x,
+            \images\hero_header\ice-cream-header-desktop@2x.png 2x
+          "
+          media="(min-width: 1280px)"
         />
         <source
-          srcset="\images\ice-cream-header-tablet.png 1x, /images/ice-cream-header-tablet@2x.png 2x"
+          srcset="
+            \images\hero_header\ice-cream-header-tablet.png    1x,
+            \images\hero_header\ice-cream-header-tablet@2x.png 2x
+          "
           media="(min-width: 768px)"
         />
         <source
           srcset="
-            \images\ice-cream-header-desktop.png    1x,
-            /images/ice-cream-header-desktop@2x.png 2x
+            \images\hero_header\ice-cream-header-mobile.png    1x,
+            \images\hero_header\ice-cream-header-mobile@2x.png 2x
           "
-          media="(min-width: 1280px)"
+          media="(min-width: 320px)"
         />
         <img
-          src="\images\ice-cream-header-desktop.png"
-          srcset="\images\ice-cream-header-desktop@2x.png 2x"
+          src="\images\hero_header\ice-cream-header-desktop.png"
+          srcset="\images\hero_header\ice-cream-header-desktop@2x.png 2x"
           alt="background image ice creams"
         />
       </picture>
@@ -28,15 +34,38 @@
         <a href="index.html" class="logo">
           <img
             class="logo__image"
-            src="\images\logo-header.png"
-            srcset="\images\logo-header@2x.png 2x"
+            src="\images\hero_header\logo-header.png"
+            srcset="\images\hero_header\logo-header@2x.png 2x"
             alt="logo strony"
           />
         </a>
+        <ul class="navigation__list">
+          <li class="navigation__list-items">
+            <a class="navigation__list-link" href="#hero-header">Home</a>
+          </li>
+          <li class="navigation__list-items">
+            <a class="navigation__list-link" href="#about">About us</a>
+          </li>
+          <li class="navigation__list-items">
+            <a class="navigation__list-link" href="#how-its-made">How it's made?</a>
+          </li>
+          <li class="navigation__list-items">
+            <a class="navigation__list-link" href="#products">Our products</a>
+          </li>
+          <li class="navigation__list-items navigation__list-items--no-marginr">
+            <a class="navigation__list-link" href="#contact">Contact</a>
+          </li>
+        </ul>
         <svg class="modal-menu-open" data-mobile-menu-open>
           <use href="\images\sprite.svg#icon-burger"></use>
         </svg>
-        <button class="navigation__button-buy navigation__button-buy--margin-left navigation__button-buy--hidden">
+        <button
+          class="
+            navigation__button-buy
+            navigation__button-buy--margin-left
+            navigation__button-buy--hidden
+          "
+        >
           Buy now
           <svg class="navigation__button-buy-icon">
             <use href="/images/sprite.svg#icon-btn-arrow"></use>
@@ -81,6 +110,48 @@
         <svg class="navigation__bottom-arrow">
           <use href="\images\sprite.svg#icon-arrow-right"></use>
         </svg>
+        <picture class="navigation__milk-image">
+          <source
+            srcset="
+              \images\hero_header\header-milk-desktop.png    1x,
+              \images\hero_header\header-milk-desktop@2x.png 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              \images\hero_header\header-milk-tablet.png    1x,
+              \images\hero_header\header-milk-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img
+            src="\images\hero_header\header-milk-desktop.png"
+            srcset="\images\hero_header\header-milk-desktop@2x.png 2x"
+            alt="jug with milk"
+          />
+        </picture>
+        <picture class="navigation__woman-image">
+          <source
+            srcset="
+              \images\hero_header\header-woman-desktop.png    1x,
+              \images\hero_header\header-woman-desktop@2x.png 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              \images\hero_header\header-woman-tablet.png    1x,
+              \images\hero_header\header-woman-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img
+            src="\images\hero_header\header-woman-desktop.png"
+            srcset="\images\hero_header\header-woman-desktop@2x.png 2x"
+            alt="woman eating ice cream"
+          />
+        </picture>
       </div>
     </div>
   </nav>
