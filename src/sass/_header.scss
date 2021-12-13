@@ -161,7 +161,8 @@
   }
   .navigation__statistics,
   .navigation__bottom-bar,
-  .navigation__button-buy--hidden {
+  .navigation__button-buy--hidden,
+  .navigation__list {
     display: none;
     overflow: hidden;
   }
@@ -388,6 +389,10 @@
       left: 125px;
       top: 60px;
     }
+  }
+  .navigation__list {
+    display: none;
+    overflow: hidden;
   }
 }
 
