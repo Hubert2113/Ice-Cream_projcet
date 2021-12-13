@@ -1,6 +1,7 @@
 .footer-copyright {
     display: flex;
     justify-content: center;
+    position: relative;
 
     &__item
     {
@@ -14,9 +15,17 @@
         font-size: 14px;
         line-height: 152%;
         text-align: center;
-
-
         color: $text-secondary;
+                &::after {
+                    margin: 0;
+                    content: ' ';
+                    position: absolute;
+                    border: 1px solid #e1e1e1;
+                    width: 100%;
+                    height: 0;
+                    left: 0;
+                    top: 30px;
+        }
     }
 
 }
@@ -46,7 +55,7 @@
                 content: ' ';
                 position: absolute;
                 border: 1px solid #e1e1e1;
-                min-width: 100%;
+                width: 100%;
                 height: 0;
                 left: 0;
                 top: 91px;
@@ -80,7 +89,7 @@
                 content: ' ';
                 position: absolute;
                 border: 1px solid #e1e1e1;
-                min-width: 100%;
+                width: 100%;
                 height: 0;
                 left: 0;
                 top: 91px;

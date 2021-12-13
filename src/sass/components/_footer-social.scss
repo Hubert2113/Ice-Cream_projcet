@@ -45,17 +45,6 @@
         flex-wrap: wrap;
         margin: 46px 20px 0 auto;
 
-        &::after {
-            margin: 0;
-            content: ' ';
-            position: absolute;
-            border: 1px solid #e1e1e1;
-            min-width: 100vw;
-            height: 0;
-            left: 0;
-            top: 65px;
-        }
-
         &__span {
             color: $color-highlight;
         }

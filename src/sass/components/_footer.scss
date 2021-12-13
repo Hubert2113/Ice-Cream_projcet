@@ -1,5 +1,6 @@
 .footer {
     background-color: $color-background-main-first;
+    
 
     &__title {
         padding: 113px 66px 0 22px;
@@ -59,6 +60,11 @@
 
 @media screen and (min-width:1200px) {
     .footer {
+
+        &__container {
+            margin: 0 auto;
+            max-width: 1280px;
+        }
         &__title {
             padding: 0;
             margin-top: 165px;
