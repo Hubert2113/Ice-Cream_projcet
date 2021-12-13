@@ -224,6 +224,9 @@
 }
 /*DESKTOP*/
 @media screen and (min-width: 1280px) {
+    .container-products {
+        max-width: 1280px;
+    }
     .products {
         padding-top: 127px;
  
