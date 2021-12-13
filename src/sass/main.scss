@@ -1,7 +1,8 @@
-@import "./variables";
+@import './variables';
+@import './normalize';
 @import './products';
 @import './modal';
-@import "./header";
+@import './header';
 /*
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
@@ -18,15 +19,13 @@
 @import './components/about';
 @import './components/products';
 @import './components/is-hidden';
-@import "./components/adventages";
+@import './components/advantages';
 
 // Style dla pliku z przykładem HTML fragmentu
 body {
-  font-family: DM sans;
+  font-family: $font-primary;
 }
 
-@media screen and (max-width: 767px) {
-  .container {
-    width: 100%;
-  }
+.container {
+  width: 100%;
 }
