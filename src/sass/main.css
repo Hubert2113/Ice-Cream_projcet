@@ -165,14 +165,13 @@ figure {
   text-align: center;
   letter-spacing: 0.04em;
   color: #fff;
-  margin-top: 66px;
   margin-bottom: 30px;
 }
 
 .products__btn {
   width: 40px;
   height: 40px;
-  padding: 0;
+  padding: 20px;
   border: none;
   border-radius: 50%;
   background-image: url(../images/products/arrow.jpg);
@@ -2470,7 +2469,7 @@ figure {
   cursor: pointer;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .products__item {
     width: 280px;
     height: 515px;
@@ -2736,7 +2735,6 @@ figure {
         -ms-flex-pack: center;
             justify-content: center;
     margin-left: 36px;
-    margin-right: 76px;
   }
   .advantages-item {
     width: 180px;

@@ -125,13 +125,12 @@
         text-align: center;
         letter-spacing: 0.04em;
         color: $color-light;
-        margin-top: 66px;
         margin-bottom: 30px;
     } 
     &__btn{
         width: 40px;
         height: 40px;
-        padding: 0;
+        padding: 20px;
         border: none;
         border-radius: 50%;
         background-image: url(../images/products/arrow.jpg);
