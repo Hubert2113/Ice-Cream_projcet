@@ -5,14 +5,27 @@
     margin-right: auto;
     width: 100%;
 }
+.products__button{
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+    border: none;
+    border-radius: 50%;
+    background-image: url(../images/products/arrow.jpg);
+    cursor: pointer;
+}
 
 @media screen  and (max-width: 767px){
     .products{
         &__item {
+            display: flex;
+            justify-content: center;
             width: 280px;
             height: 515px;
             &::after {
-                top: -266px;
+                position: relative;
+                margin-top: auto;
+                margin-bottom: auto;
               }
         }
         &__secondary-title{
@@ -69,14 +82,14 @@
         padding: 161px 41px 21px 39px;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        justify-content: center;
+
         position: relative;
         margin-top: 180px;
         &::after {
             content: url(../images/products/dots.png);
             position: relative;
-            top: -239px;
+            top: -265px;
             right: 0;
           }
 
@@ -108,6 +121,7 @@
               }
         }   
     }
+  
     &__secondary-title{
         font-family: $font-header;
         font-size: 20px;
@@ -127,15 +141,7 @@
         color: $color-light;
         margin-bottom: 30px;
     } 
-    &__btn{
-        width: 40px;
-        height: 40px;
-        padding: 20px;
-        border: none;
-        border-radius: 50%;
-        background-image: url(../images/products/arrow.jpg);
-        cursor: pointer;
-    } 
+     
 }
 
 /*TABLET*/
@@ -176,7 +182,7 @@
             position: relative;
             margin-top: 200px;
             &::after {
-                top: -250px;
+                top: -274px;
               }
 
             &:nth-child(1) {
@@ -249,7 +255,7 @@
             position: relative;
             margin-top: 259px;
             &::after {
-                top: -250px;
+            top: -290px;
               }
 
             &:nth-child(1) {
