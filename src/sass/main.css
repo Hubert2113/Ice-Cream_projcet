@@ -12,13 +12,31 @@ figure {
   width: 100%;
 }
 
+.products__button {
+  width: 40px;
+  height: 40px;
+  padding: 20px;
+  border: none;
+  border-radius: 50%;
+  background-image: url(../images/products/arrow.jpg);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 767px) {
   .products__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 280px;
     height: 515px;
   }
   .products__item::after {
-    top: -266px;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
   }
   .products__secondary-title {
     font-size: 22px;
@@ -97,12 +115,9 @@ figure {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   margin-top: 180px;
 }
@@ -110,7 +125,7 @@ figure {
 .products__item::after {
   content: url(../images/products/dots.png);
   position: relative;
-  top: -239px;
+  top: -265px;
   right: 0;
 }
 
@@ -168,16 +183,6 @@ figure {
   margin-bottom: 30px;
 }
 
-.products__btn {
-  width: 40px;
-  height: 40px;
-  padding: 20px;
-  border: none;
-  border-radius: 50%;
-  background-image: url(../images/products/arrow.jpg);
-  cursor: pointer;
-}
-
 /*TABLET*/
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .section-products {
@@ -219,7 +224,7 @@ figure {
     margin-top: 200px;
   }
   .products__item::after {
-    top: -250px;
+    top: -274px;
   }
   .products__item:nth-child(1) {
     margin-right: 20px;
@@ -293,7 +298,7 @@ figure {
     margin-top: 259px;
   }
   .products__item::after {
-    top: -250px;
+    top: -290px;
   }
   .products__item:nth-child(1) {
     margin-right: 29px;
@@ -404,16 +409,7 @@ figure {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
   width: 250px;
-  height: 100vh;
   padding-top: 19px;
 }
 
@@ -438,7 +434,8 @@ figure {
 }
 
 .navigation-modal__border {
-  border: 1px solid #ffa5ba;
+  border-bottom: 1px solid #ffa5ba;
+  border-top: 1px solid #ffa5ba;
   width: 250px;
   padding: 12px 0 12px 0;
 }
@@ -1202,6 +1199,7 @@ figure {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-image: linear-gradient(#fff5f6 50%, transparent 3px);
 }
 
 .gallery__mosaic {
@@ -1508,10 +1506,6 @@ figure {
   cursor: pointer;
 }
 
-.contacts__button:hover, .contacts__button:focus {
-  opacity: 0.6;
-}
-
 .contacts__button--localization {
   background: #d41443;
   color: #fff;
@@ -1520,6 +1514,12 @@ figure {
 .contacts__button--franchise {
   color: #d41443;
   background-color: #fff;
+}
+
+.contacts__button--franchise:hover, .contacts__button--franchise:focus {
+  background-color: #ecebeb;
+  -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), cursor 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), cursor 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts__button-icon {
@@ -1637,7 +1637,7 @@ figure {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    background-image: url("/images/contactsbg.png"), linear-gradient(360deg, #fff5f6 668px, #fff 0);
+    background-image: url("/images/contactsbg.png"), linear-gradient(360deg, #fff5f6 620px, #fff 0);
   }
   .contacts__grid {
     display: -webkit-box;
@@ -1784,6 +1784,10 @@ figure {
 }
 
 @media screen and (min-width: 1200px) {
+  .footer__container {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
   .footer__title {
     padding: 0;
     margin-top: 165px;
@@ -1870,17 +1874,6 @@ figure {
   margin: 46px 20px 0 auto;
 }
 
-.footer-social__text::after {
-  margin: 0;
-  content: ' ';
-  position: absolute;
-  border: 1px solid #e1e1e1;
-  min-width: 100vw;
-  height: 0;
-  left: 0;
-  top: 65px;
-}
-
 .footer-social__text__span {
   color: #d41443;
 }
@@ -1934,6 +1927,7 @@ figure {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .footer-copyright__item {
@@ -1948,6 +1942,17 @@ figure {
   line-height: 152%;
   text-align: center;
   color: #907e82;
+}
+
+.footer-copyright__item::after {
+  margin: 0;
+  content: ' ';
+  position: absolute;
+  border: 1px solid #e1e1e1;
+  width: 100%;
+  height: 0;
+  left: 0;
+  top: 30px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1978,7 +1983,7 @@ figure {
     content: ' ';
     position: absolute;
     border: 1px solid #e1e1e1;
-    min-width: 100%;
+    width: 100%;
     height: 0;
     left: 0;
     top: 91px;
@@ -2013,7 +2018,7 @@ figure {
     content: ' ';
     position: absolute;
     border: 1px solid #e1e1e1;
-    min-width: 100%;
+    width: 100%;
     height: 0;
     left: 0;
     top: 91px;
@@ -2461,8 +2466,8 @@ figure {
 
 .products__btn {
   width: 40px;
-  height: auto;
-  padding: 0;
+  height: 40px;
+  padding: 20px;
   border: none;
   border-radius: 50%;
   background-image: url(../images/products/arrow.jpg);
@@ -2475,13 +2480,13 @@ figure {
     height: 515px;
   }
   .products__item::after {
-    top: -266px;
+    top: -265px;
   }
   .products__secondary-title {
     font-size: 22px;
   }
   .products__description {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
@@ -2525,7 +2530,7 @@ figure {
     margin-top: 200px;
   }
   .products__item::after {
-    top: -250px;
+    top: -274px;
   }
   .products__item:nth-child(1) {
     margin-right: 20px;
@@ -2595,7 +2600,7 @@ figure {
     margin-top: 259px;
   }
   .products__item::after {
-    top: -250px;
+    top: -290px;
   }
   .products__item:nth-child(1) {
     margin-right: 29px;
