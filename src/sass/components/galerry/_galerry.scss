@@ -2,6 +2,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  background-image: linear-gradient($color-background-main-first 50%, transparent 3px);
+
   &__mosaic {
     width: 100%;
     max-width: 1280px;
