@@ -31,8 +31,8 @@
     &__container {
       max-width: 767px;
       padding-top: 6px;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 6.25%; /*20px*/
+      padding-right: 6.25%; /*20px*/
       padding-bottom: 160px;
       overflow: hidden;
       position: relative;
@@ -41,9 +41,9 @@
       border-radius: 50%;
       width: 346px;
       height: 344px;
-      left: 36px;
+      left: 11.25%; /*36x*/
       top: 83px;
-      background: #ffa5ba;
+      background: $color-accent;
       position: absolute;
       z-index: 1;
     }
@@ -52,7 +52,7 @@
       z-index: 2;
       max-width: 100%;
       top: 92px;
-      left: 117px;
+      left: 36.56%; /*117px*/
     }
     &__top-bar {
       display: flex;
@@ -65,24 +65,24 @@
     &__button-buy {
       width: 160px;
       height: 44px;
-      background: #ffffff;
+      background: $color-light;
       border-radius: 22px;
       border: 0;
 
-      font-family: DM Sans;
+      font-family: $font-primary;
       font-weight: bold;
       font-size: 16px;
       line-height: 21px;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #d41443;
+      color: $color-highlight;
 
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
       &:hover {
-        background-color: #ecebeb;
+        background-color: $color-btn-hover;
         cursor: pointer;
       }
       &--modal-size {
@@ -117,7 +117,7 @@
       letter-spacing: 0.04em;
       text-transform: uppercase;
       color: $color-light;
-      max-width: 218px;
+      max-width: 60.55%; /*218px*/
       margin: 0;
     }
     &__banner-second {
@@ -130,17 +130,17 @@
       display: flex;
       align-items: center;
       text-align: center;
-      background-color: #ffffff;
+      background-color: $color-light;
       padding: 7px 16px;
       border-radius: 20px;
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
       &:hover {
-        background-color: #ecebeb;
+        background-color: $color-btn-hover;
       }
       &--bg-color {
-        background-color: #d41443;
+        background-color: $color-highlight;
         margin-right: 8px;
         &:hover {
           background-color: #c7133e;
@@ -148,14 +148,14 @@
       }
     }
     &__button-link {
-      font-family: DM Sans;
+      font-family: $font-primary;
       font-style: normal;
       font-weight: normal;
       font-size: 8px;
       line-height: 1.25;
-      color: #d41443;
+      color: $color-highlight;
       &--color {
-        color: #ffffff;
+        color: $color-light;
       }
     }
   }
@@ -185,11 +185,15 @@
 
   .navigation {
     &__container {
-      max-width: 1279px;
+      align-items: center;
+      margin: 0 auto;
+      position: relative;
+      max-width: 768px;
       padding-top: 37px;
       padding-left: 34px;
       padding-right: 34px;
       padding-bottom: 59px;
+
     }
     &__circle {
       border-radius: 50%;
@@ -197,7 +201,7 @@
       height: 322px;
       left: 307px;
       top: 31px;
-      background: #ffa5ba;
+      background: $color-accent;
       position: absolute;
       z-index: 1;
     }
@@ -213,31 +217,31 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 11px;
+      margin-bottom: 6px;
       position: relative;
       z-index: 3;
     }
     &__button-buy {
       width: 160px;
       height: 44px;
-      background: #ffffff;
+      background: $color-light;
       border-radius: 22px;
       border: 0;
 
-      font-family: DM Sans;
+      font-family: $font-primary;
       font-weight: bold;
       font-size: 16px;
       line-height: 21px;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #d41443;
+      color: $color-highlight;
 
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
       &:hover {
-        background-color: #ecebeb;
+        background-color: $color-btn-hover;
         cursor: pointer;
       }
       &--modal-size {
@@ -266,7 +270,7 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: flex-start;
-      margin-bottom: 66px;
+      margin-bottom: 54px;
       position: relative;
       z-index: 3;
     }
@@ -292,7 +296,7 @@
     &__statistic-circle {
       position: absolute;
       border-radius: 50%;
-      background-color: #ffffff;
+      background-color: $color-light;
       width: 16px;
       height: 16px;
       left: 33px;
@@ -303,21 +307,21 @@
       }
     }
     &__statistic-number {
-      font-family: Titan One;
+      font-family: $font-header;
       font-size: 28px;
       line-height: 1.14;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-      color: #d41443;
+      color: $color-highlight;
       margin: 0;
       position: relative;
       z-index: 2;
     }
     &__statistic-text {
-      font-family: DM Sans;
+      font-family: $font-primary;
       font-size: 8px;
       line-height: 1.25;
-      color: #ffffff;
+      color: $color-light;
       margin: 0;
     }
     &__banner-second {
@@ -330,18 +334,18 @@
       display: flex;
       align-items: center;
       text-align: center;
-      background-color: #ffffff;
+      background-color: $color-light;
       padding: 7px 16px;
       border-radius: 20px;
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
       &:hover {
-        background-color: #ecebeb;
+        background-color: $color-btn-hover;
         cursor: pointer;
       }
       &--bg-color {
-        background-color: #d41443;
+        background-color: $color-highlight;
         margin-right: 8px;
         &:hover {
           background-color: #c7133e;
@@ -349,14 +353,14 @@
       }
     }
     &__button-link {
-      font-family: DM Sans;
+      font-family: $font-primary;
       font-style: normal;
       font-weight: normal;
       font-size: 8px;
       line-height: 1.25;
-      color: #d41443;
+      color: $color-highlight;
       &--color {
-        color: #ffffff;
+        color: $color-light;
       }
     }
     &__bottom-bar {
@@ -364,17 +368,17 @@
       z-index: 2;
     }
     &__bottom-text {
-      font-family: DM Sans;
+      font-family: $font-primary;
       font-size: 8px;
       line-height: 1.5;
-      color: #ffffff;
+      color: $color-light;
       max-width: 114px;
       margin: 0 0 0 120px;
     }
     &__bottom-circle {
       position: absolute;
       border-radius: 50%;
-      background-color: #ffffff;
+      background-color: $color-light;
       width: 18px;
       height: 18px;
       left: 120px;
@@ -384,7 +388,7 @@
     &__bottom-arrow {
       width: 8px;
       height: 8px;
-      fill: #d41443;
+      fill: $color-highlight;
       position: absolute;
       z-index: 2;
       left: 125px;
@@ -392,12 +396,12 @@
     }
     &__milk-image{
       position: absolute;
-      top: -45px; /* do dopracowania*/
+      top: -45px; 
       left: 0;
     }
     &__woman-image{
       position: absolute;
-      top: -45px; /* do dopracowania*/
+      top: -26px; 
       left: 522px;
     }
   }
@@ -410,7 +414,7 @@
 @media screen and (min-width: 1280px) {
   .logo {
     &__image {
-      margin-left: -69px; /* do dopracowania*/
+      margin-left: -69px; 
     }
   }
 
@@ -422,7 +426,7 @@
       padding-top: 38px;
       padding-left: 115px;
       padding-right: 115px;
-      padding-bottom: 102px;
+      padding-bottom: 84px;
       position: relative;
     }
     &__circle {
@@ -431,7 +435,7 @@
       height: 538px;
       left: 475px;
       top: 52px;
-      background: #ffa5ba;
+      background: $color-accent;
       position: absolute;
       z-index: 1;
     }
@@ -447,7 +451,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 84px;
+      margin-bottom: 55px;
       position: relative;
       z-index: 3;
     }
@@ -466,35 +470,35 @@
     }
     &__list-link {
       text-decoration: none;
-      font-family: DM Sans;
+      font-family: $font-primary;
       font-weight: bold;
       font-size: 16px;
       line-height: 1.31;
-      color: #FFFFFF;
+      color: $color-light;
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       &:hover{
-        color: #D41443;
+        color: $color-highlight;
       }
     }
     &__button-buy {
       width: 160px;
       height: 44px;
-      background: #ffffff;
+      background: $color-light;
       border-radius: 22px;
       border: 0;
-      font-family: DM Sans;
+      font-family: $font-primary;
       font-weight: bold;
       font-size: 16px;
       line-height: 21px;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #d41443;
+      color: $color-highlight;
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
       &:hover {
-        background-color: #ecebeb;
+        background-color: $color-btn-hover;
         cursor: pointer;
       }
     }
@@ -542,7 +546,7 @@
     &__statistic-circle {
       position: absolute;
       border-radius: 50%;
-      background-color: #ffffff;
+      background-color: $color-light;
       width: 30px;
       height: 30px;
       left: 60px;
@@ -553,21 +557,21 @@
       }
     }
     &__statistic-number {
-      font-family: Titan One;
+      font-family: $font-header;
       font-size: 46px;
       line-height: 1.15;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-      color: #d41443;
+      color: $color-highlight;
       margin: 0;
       position: relative;
       z-index: 2;
     }
     &__statistic-text {
-      font-family: DM Sans;
+      font-family: $font-primary;
       font-size: 14px;
       line-height: 1.29;
-      color: #ffffff;
+      color: $color-light;
       margin: 0;
     }
     &__banner-second {
@@ -580,18 +584,18 @@
       display: flex;
       align-items: center;
       text-align: center;
-      background-color: #ffffff;
+      background-color: $color-light;
       padding: 11px 20px;
       border-radius: 20px;
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
       &:hover {
-        background-color: #ecebeb;
+        background-color: $color-btn-hover;
         cursor: pointer;
       }
       &--bg-color {
-        background-color: #d41443;
+        background-color: $color-highlight;
         margin-right: 15px;
         &:hover {
           background-color: #c7133e;
@@ -599,14 +603,14 @@
       }
     }
     &__button-link {
-      font-family: DM Sans;
+      font-family: $font-primary;
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
       line-height: 1.29;
-      color: #d41443;
+      color: $color-highlight;
       &--color {
-        color: #ffffff;
+        color: $color-light;
       }
     }
     &__bottom-bar {
@@ -614,17 +618,17 @@
       z-index: 2;
     }
     &__bottom-text {
-      font-family: DM Sans;
+      font-family: $font-primary;
       font-size: 14px;
       line-height: 1.4;
-      color: #ffffff;
+      color: $color-light;
       max-width: 200px;
       margin-left: 180px;
     }
     &__bottom-circle {
       position: absolute;
       border-radius: 50%;
-      background-color: #ffffff;
+      background-color: $color-light;
       width: 18px;
       height: 18px;
       left: 180px;
@@ -634,7 +638,7 @@
     &__bottom-arrow {
       width: 8px;
       height: 8px;
-      fill: #d41443;
+      fill: $color-highlight;
       position: absolute;
       z-index: 2;
       left: 185px;
@@ -642,12 +646,12 @@
     }
     &__milk-image{
       position: absolute;
-      top: -45px; /* do dopracowania*/
+      top: -65px; 
       left: 0;
     }
     &__woman-image{
       position: absolute;
-      top: -80px; /* do dopracowania*/
+      top: -55px; 
       left: 763px;
     }
   }
