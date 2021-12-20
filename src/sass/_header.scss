@@ -193,7 +193,8 @@
       padding-left: 34px;
       padding-right: 34px;
       padding-bottom: 59px;
-
+      overflow: hidden;
+      position: relative;
     }
     &__circle {
       border-radius: 50%;
@@ -396,7 +397,7 @@
     }
     &__milk-image{
       position: absolute;
-      top: -45px; 
+      top: -44px; 
       left: 0;
     }
     &__woman-image{
@@ -428,6 +429,7 @@
       padding-right: 115px;
       padding-bottom: 84px;
       position: relative;
+      overflow: hidden;
     }
     &__circle {
       border-radius: 50%;
